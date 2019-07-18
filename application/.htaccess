@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteCond %{uploads} !-f
+RewriteCond %{uploads} !-d
+RewriteRule ^(.*)$ index.php/$1 [L]
